@@ -8,13 +8,6 @@ jobs:
     name: Build Release APK
     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout fdroid branch
-        uses: actions/checkout@v4
-        with:
-          ref: fdroid
-          fetch-depth: 0
-
       - name: Show Git info
         run: |
           echo "Branch:"
